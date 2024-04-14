@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Planner</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <h1>Trip Planner</h1>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <img src="images/hero-image.jpg" alt="hero-image" class="animate-image" />
+        </div>
+        <div class="text-content">
+            <p>Welcome to Trip Planner - your ultimate companion for hassle-free travel planning on a budget! Seamlessly organize your trips, track expenses, and discover amazing destinations without breaking the bank. Start your journey with us today and make every adventure unforgettable!</p>
+        </div>
+
+        <div class="forms">
+            <form id="trip_form">
+                <label for="destination">Destination:</label><br>
+                <input type="text" id="destination" name="destination" required><br><br>
+
+                <label for="travel_cost">Travel Cost ($):</label><br>
+                <input type="number" id="travel_cost" name="travel_cost" min="0" required><br><br>
+
+                <label for="staying_cost">Staying Cost ($):</label><br>
+                <input type="number" id="staying_cost" name="staying_cost" min="0" required><br><br>
+
+                <label for="transportation_cost">Transportation Cost ($):</label><br>
+                <input type="number" id="transportation_cost" name="transportation_cost" min="0" required><br><br>
+
+                <label for="food_cost">Food Cost ($):</label><br>
+                <input type="number" id="food_cost" name="food_cost" min="0" required><br><br>
+
+                <label for="other_expenses">Other Expenses ($):</label><br>
+                <input type="number" id="other_expenses" name="other_expenses" min="0" required><br><br>
+
+                <label for="total_budget">Total Budget ($):</label><br>
+                <input type="number" id="total_budget" name="total_budget" min="0" required><br><br>
+
+                <input type="reset" value="Reset Form" />
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+
+        <div class="results-container">
+            <div id="results"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
